@@ -2,7 +2,7 @@ package com.library.entity;
 
 import com.library.annotations.FileDesc;
 
-@FileDesc(filename="userbook.txt")
+@FileDesc(filename = "userbook.txt")
 public class UserBook {
 
     private int id;
@@ -40,5 +40,10 @@ public class UserBook {
 
     public void setBookId(int bookId) {
         this.bookId = bookId;
+    }
+
+    @Override
+    public String toString() {
+        return id + "," + userId + "," + bookId;
     }
 }
